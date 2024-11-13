@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos || Autoshop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="index.html"><img src="imgs/logo.webp" alt=""></a>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<main>
+    <div class="titulo">
+        <h1><span>Auto</span>shop</h1>
+    </div>
+    <section id="productos">
+        <h2>Productos</h2>
+        <div class="productos">
+            <div>
+                <img src="imgs/ruedas.jpg" alt="">
+                <p>Neumaticos para auto</p>
+                <p class="precio">$500.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+            <div>
+                <img src="imgs/bateria.webp" alt="">
+                <p>Bateria 12x65 </p>
+                <p class="precio">$117.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+            <div>
+                <img src="imgs/aceite.png" alt="">
+                <p>Aceite para motor Total Quartz</p>
+                <p class="precio">$54.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+            <div>
+                <img src="imgs/espejo.webp" alt="">
+                <p>Espejo Exterior Izquierdo</p>
+                <p class="precio">$54.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+            <div>
+                <img src="imgs/tazas.jpg" alt="">
+                <p>Juego 4 Tazas De Rueda </p>
+                <p class="precio">$54.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+            <div>
+                <img src="imgs/arrancador.jpg" alt="">
+                <p>Arrancador de bateria</p>
+                <p class="precio">$395.000</p>
+                <a href="#">Agregar al carrito</a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="redes-footer">
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </div>
+    <div class="derechos-reservados">
+        <p>Todos los derechos reservados. 2024</p>
+    </div>
+</footer>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        hamburger.classList.toggle('open');
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros || Autoshop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="index.html"><img src="imgs/logo.webp" alt=""></a>
+    </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+<main>
+    <div class="titulo">
+        <h1><span>Auto</span>shop</h1>
+    </div>
+    <section id="nosotros">
+        <div class="nosotros">
+            <div>
+                <h2>Historia</h2>
+                <p>Autoshop nació hace más de 20 años, cubriendo las necesidades de los emergentes lavaderos de autos, ayudándolos a prestar cada vez más rápidos y eficientes servicios. En su momento acompañó al rubro en su evolución hacia las máquinas automáticas y luego en su regreso al lavado artesanal, aportando innovadores productos para facilitar la tarea, asegurar una mejor terminación y una mayor protección del vehículo. En los últimos tiempos, aprovechando su experiencia, Autoshop desarrolló una completa línea, que se amplia y evoluciona constantemente con la incorporación de novedosos productos.</p>
+            </div>
+            <div>
+                <h2>Misión y Visión</h2>
+                <p>La Misión de Full Car es proporcionar a través de sus productos, todas las herramientas necesarias a los profesionales del lavado, para que puedan satisfacer a sus Clientes obteniendo trabajos de excelente terminación y máxima protección, cuidando y embelleciendo al automóvil con productos que no afecten el medio ambiente ni la salud del operario, pudiendo así ofrecer servicios distinguidos y más rentables.</p>
+
+                <p>Y al usuario particular ofreciéndole las posibilidades de obtener resultados profesionales y gratificantes cuando se dedique al cuidado de su automóvil.</p>
+
+                <p>La Visión de Full Car, es reafirmar el liderazgo actual, convirtiéndose en líder en el rubro, ofreciendo no solo productos sino verdaderas soluciones, herramientas de negocio y satisfacción para sus clientes y usuarios, de Argentina y el Mundo.</p>
+            </div>
+
+        </div>
+    </section>
+    <section id="nuestro-equipo">
+        <h2>Nuestro Equipo</h2>
+        <div class="nuestro-equipo">
+            <div>
+                <img src="imgs/pablo.webp" alt="">
+                <p class="nombre-equipo">Pablo Martinez</p>
+                <p>Ingeniero</p>
+            </div>
+            <div>
+                <img src="imgs/milton.webp" alt="">
+                <p class="nombre-equipo">Milton Ferrante</p>
+                <p>Ingeniero</p>
+            </div>
+            <div>
+                <img src="imgs/tomas.webp" alt="">
+                <p class="nombre-equipo">Tomás Perez</p>
+                <p>Ingeniero</p>
+            </div>
+        </div>
+
+    </section>
+</main>
+<footer class="footer">
+    <div class="redes-footer">
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </div>
+    <div class="derechos-reservados">
+        <p>Todos los derechos reservados. 2024</p>
+    </div>
+</footer>
+
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.querySelector('.nav');
+
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        hamburger.classList.toggle('open');
+    });
+
+</script>
+</body>
+</html>
